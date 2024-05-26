@@ -39,7 +39,7 @@ def buy():
     def buy3():
         W5 = Toplevel(W2)
         W5.config(width=1200, height=900)
-        L5 = Label(W5, image=p8, borderwidth=0)
+        L5 = Label(W5, borderwidth=0)
         L5.place(x=-1, y=-1, width=1200, height=900)
 
         def check():
@@ -65,7 +65,7 @@ def buy():
             Check['image'] = p10
 
         Check = Button(W5, image=p10, borderwidth=0, command=check)
-        Check.place(x=500, y=500, width=300, height=50)
+        Check.place(x=600, y=700, width=300, height=50)
         Check.bind('<Enter>', check1)
         Check.bind('<Leave>', check2)
 
@@ -90,9 +90,17 @@ def buy():
         entry2.config(width=50)  # Ширина окна ввода
         entry2.place(x=400, y=400)  # Положение окна ввода в окне
 
-        LABEL_1 = ttk.Label(W5, anchor=ttk.CENTER, font=('Calibri light', '14', 'bold'), text="Введите свои данные").place(x=400, y=200)
-        LABEL_2 = ttk.Label(W5, anchor=ttk.CENTER, font=('Calibri light', '14', 'bold'), text="Фамилия:").place(x=300, y=300)
-        LABEL_3 = ttk.Label(W5, anchor=ttk.CENTER, font=('Calibri light', '14', 'bold'), text="Имя:").place(x=300, y=400)
+        entry3 = ttk.Entry(W5, validate="key", validatecommand=(vcmd, '%P'))
+        entry3.pack()
+
+        entry3.config(width=50)  # Ширина окна ввода
+        entry3.place(x=400, y=500)  # Положение окна ввода в окне
+
+        entry4 = ttk.Entry(W5, validate="key", validatecommand=(vcmd, '%P'))
+        entry4.pack()
+
+        entry4.config(width=50)  # Ширина окна ввода
+        entry4.place(x=400, y=600)  # Положение окна ввода в окне
 
         W5.grab_set()
         W5.mainloop()
@@ -111,7 +119,7 @@ def buy():
     def buy6():
         W6 = Toplevel(W2)
         W6.config(width=1200, height=900)
-        L6 = Label(W6, image=p8, borderwidth=0)
+        L6 = Label(W6, borderwidth=0)
         L6.place(x=-1, y=-1, width=1200, height=900)
 
         def check():
@@ -137,7 +145,7 @@ def buy():
             Check['image'] = p10
 
         Check = Button(W6, image=p10, borderwidth=0, command=check)
-        Check.place(x=500, y=500, width=300, height=50)
+        Check.place(x=600, y=700, width=300, height=50)
         Check.bind('<Enter>', check1)
         Check.bind('<Leave>', check2)
 
@@ -160,9 +168,17 @@ def buy():
         entry2.config(width=50)  # Ширина окна ввода
         entry2.place(x=400, y=400)  # Положение окна ввода в окне
 
-        LABEL_1 = ttk.Label(W6, anchor=ttk.CENTER, font=('Calibri light', '14', 'bold'), text="Введите свои данные").place(x=400, y=200)
-        LABEL_2 = ttk.Label(W6, anchor=ttk.CENTER, font=('Calibri light', '14', 'bold'), text="Фамилия:").place(x=300, y=300)
-        LABEL_3 = ttk.Label(W6, anchor=ttk.CENTER, font=('Calibri light', '14', 'bold'), text="Имя:").place(x=300, y=400)
+        entry3 = ttk.Entry(W6, validate="key", validatecommand=(vcmd, '%P'))
+        entry3.pack()
+
+        entry3.config(width=50)  # Ширина окна ввода
+        entry3.place(x=400, y=500)  # Положение окна ввода в окне
+
+        entry4 = ttk.Entry(W6, validate="key", validatecommand=(vcmd, '%P'))
+        entry4.pack()
+
+        entry4.config(width=50)  # Ширина окна ввода
+        entry4.place(x=400, y=600)  # Положение окна ввода в окне
 
         W6.grab_set()
         W6.mainloop()
@@ -181,7 +197,7 @@ def buy():
     def buy9():
         W7 = Toplevel(W2)
         W7.config(width=1200, height=900)
-        L7 = Label(W7, image=p8, borderwidth=0)
+        L7 = Label(W7, borderwidth=0)
         L7.place(x=-1, y=-1, width=1200, height=900)
 
         def check():
@@ -207,7 +223,7 @@ def buy():
             Check['image'] = p10
 
         Check = Button(W7, image=p10, borderwidth=0, command=check)
-        Check.place(x=500, y=500, width=300, height=50)
+        Check.place(x=600, y=700, width=300, height=50)
         Check.bind('<Enter>', check1)
         Check.bind('<Leave>', check2)
 
@@ -218,6 +234,7 @@ def buy():
                 return False
 
         vcmd = W7.register(on_validate_input)
+
         entry = ttk.Entry(W7, validate="key", validatecommand=(vcmd, '%P'))
         entry.pack()
 
@@ -230,9 +247,17 @@ def buy():
         entry2.config(width=50)  # Ширина окна ввода
         entry2.place(x=400, y=400)  # Положение окна ввода в окне
 
-        LABEL_1 = ttk.Label(W7, anchor=ttk.CENTER, font=('Calibri light', '14', 'bold'), text="Введите свои данные").place(x=400, y=200)
-        LABEL_2 = ttk.Label(W7, anchor=ttk.CENTER, font=('Calibri light', '14', 'bold'), text="Фамилия:").place(x=300, y=300)
-        LABEL_3 = ttk.Label(W7, anchor=ttk.CENTER, font=('Calibri light', '14', 'bold'), text="Имя:").place(x=300, y=400)
+        entry3 = ttk.Entry(W7, validate="key", validatecommand=(vcmd, '%P'))
+        entry3.pack()
+
+        entry3.config(width=50)  # Ширина окна ввода
+        entry3.place(x=400, y=500)  # Положение окна ввода в окне
+
+        entry4 = ttk.Entry(W7, validate="key", validatecommand=(vcmd, '%P'))
+        entry4.pack()
+
+        entry4.config(width=50)  # Ширина окна ввода
+        entry4.place(x=400, y=600)  # Положение окна ввода в окне
 
         W7.grab_set()
         W7.mainloop()
