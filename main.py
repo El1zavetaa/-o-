@@ -1,6 +1,7 @@
 from tkinter import *
 import ttkbootstrap as ttk
 from ttkbootstrap.constants import *
+import random
 
 W1 = Tk()
 W1.config(width=1200, height=900)
